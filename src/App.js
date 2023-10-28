@@ -29,11 +29,11 @@ function App() {
     .then(res=>console.log(res));
   }
 
-  const deleteuser=()=>{
+  const deleteuser = () => {
     axios.delete(`http://localhost:9901/delete?uid=${userid}`)
-    .then(res=>console.log(res));
+      .then(res => console.log(res));
     hello();
-  }
+  };
 
   
 useEffect(() => {
